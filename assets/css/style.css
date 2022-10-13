@@ -1,0 +1,470 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+
+  /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+ 
+  
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    top: 9rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .hero > .carousel-inner > .carousel-item {
+    height: 42rem;
+  }
+  
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* rtl:end:ignore */
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  /* rtl:begin:remove */
+  .featurette-heading {
+    letter-spacing: -.05rem;
+  }
+  
+  /* rtl:end:remove */
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+
+
+/* COMIENZO */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body.bg-main {
+    background-color: #8699BD;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.navbar-brand {
+    padding: 30px 40px!important;
+    background-color: #fff;
+}
+
+.navbar-brand > img {
+    width: 150px;
+}
+
+@media (min-width: 768px) {
+  ul.navbar-nav > li.nav-item > a.nav-link{
+    padding: calc(var(--bs-navbar-nav-link-padding-x) * 0.5) 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  ul.navbar-nav > li.nav-item > a.nav-link{
+    padding: var(--bs-navbar-nav-link-padding-x) 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+    .navbar-brand > img {
+        width: 200px;
+    }
+}
+
+.main-menu {
+    padding: 0!important;
+    background-color: #8699BC;
+}
+
+li.nav-item > a.nav-link {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+    li.nav-item > a.nav-link {
+        font-size: 1.5rem;
+    }
+}
+
+.logo-linkedin{
+    width: 50px;
+    margin-right: 2rem;
+}
+
+h2.carousel-caption-title{
+    color: #fff;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  h2.carousel-caption-title{
+    font-size: 2.5rem;
+}
+}
+
+p.carousel-caption-parrafo{
+    color: #fff;
+    font-weight: 700;
+}
+
+.slide-1, .slide-2, .slide-3, .slide-4{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+}
+
+@media (min-width: 768px) {
+    .slide-1, .slide-2, .slide-3, .slide-4{
+        background-position: 50% 50%;
+    }
+}
+
+.slide-1{
+    background-image: url('../img/carrusel/inicio_servicios.jpg');
+}
+
+.slide-2{
+    background-image: url('../img/carrusel/equipo.jpg');
+}
+
+.slide-3{
+    background-image: url('../img/carrusel/clientes.jpg');
+}
+
+.slide-4{
+    background-image: url('../img/carrusel/contacto.jpg');
+}
+
+.section-title{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: #689f49;
+  margin: 0;
+  width: 35%;
+  max-width: 300px;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 5px 0px;
+}
+
+.bg-sectionTitle{
+  background-color: #94bb7c;
+}
+
+a.link-contacto{
+  font-weight: 700;
+  color: #c1d8b1;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+a.link-contacto:hover{
+  color: #fff;
+}
+
+p.text-section{
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 45px;
+}
+
+span.text-up{
+  font-size: 2.2rem;
+}
+
+img.servicios__img{
+  width: 50%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  img.servicios__img{
+    width: 90%;
+  }
+}
+
+p.servicios__text{
+  color: #fff;
+  font-weight: 300;
+  padding: 10px 0px;
+  font-size: .95rem;
+}
+
+@media (min-width: 768px) {
+  p.servicios__text{
+    font-size: .75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  p.servicios__text{
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 1044px) {
+  p.servicios__text{
+    font-size: .95rem;
+  }
+}
+
+img.equipo__img{
+  width: 100%;
+}
+
+h2.equipo__title{
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
+
+h3.equipo__name{
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a > img.equipo__linkedin{
+  max-width: 35px;
+  display: inline-block;
+  align-self: center;
+  padding-bottom: 10px;
+}
+
+ul.equipo__cv{
+  list-style: none;
+  padding-left: 0px;;
+}
+
+ul.equipo__cv > li{
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+ul.equipo__cv > li::before{
+  content: "-";
+  padding-right: 10px;
+}
+
+p.equipo__parrafo{
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+
+/* Clientes */
+
+@media (max-width: 767px) {
+  div.carouselClientes > .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  div.carouselClientes > .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+div.carouselClientes > .carousel-inner .carousel-item.active,
+div.carouselClientes > .carousel-inner .carousel-item-next,
+div.carouselClientes > .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  div.carouselClientes > .carousel-inner .carousel-item-end.active,
+  div.carouselClientes > .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  div.carouselClientes > .carousel-inner .carousel-item-start.active, 
+  div.carouselClientes > .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+div.carouselClientes > .carousel-inner .carousel-item-end,
+div.carouselClientes > .carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
+.controlClientes{
+  width: 5%!important;
+}
+
+img.clientes__img{
+  width: 65%;
+}
+
+/* Contacto */
+
+.contacto__bg{
+  background-image: url('../img/formulario.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+button.contacto__btn{
+  background-color: #8699bd;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 300;
+  border-radius: 200px;
+  border: 1px dashed #689f49;
+  height: 220px;
+  width: 220px;
+  margin: 50px auto;
+}
+
+/* Footer */
+
+.logo-gr-footer{
+  background-color: #fff;
+  padding: 35px 30px 20px 30px!important;
+}
+
+footer{
+  background-color: #94bb7c;
+  margin-top: 30px;
+}
+
+button.footer__politicas{
+  background-color: #8699BD;
+  border: 0;
+  color: #fff;
+  padding: 2px 15px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+button.footer__politicas:hover{
+  font-weight: 400;
+  transition: 800ms;
+}
+
+ul.footer__text > li.nav-item{
+  padding: 2px 20px;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  ul.footer__text > li.nav-item{
+    border-left: 1px solid #fff;
+  }
+
+  ul.footer__text > li.nav-item:first-child{
+    border-left: 0
+  }
+}
+
+
+
