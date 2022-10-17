@@ -172,14 +172,23 @@ body.bg-main {
     background-color: #8699BC;
 }
 
-li.nav-item > a.nav-link {
+/* li.nav-item > a.nav-link{
+  color: #fff;
+  font-weight: 300;
+  font-size: 1rem;
+} */
+
+li.nav-item > a.nav-link > button.nav-button {
     color: #fff;
     font-weight: 300;
     font-size: 1rem;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
 }
 
 @media (min-width: 1024px) {
-    li.nav-item > a.nav-link {
+    li.nav-item > a.nav-link > button.nav-button {
         font-size: 1.5rem;
     }
 }
