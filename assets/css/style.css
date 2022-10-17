@@ -456,5 +456,8 @@ ul.footer__text > li.nav-item{
   }
 }
 
-
+.nav-pin{
+  position: relative;
+  top: -100px;
+}
 
